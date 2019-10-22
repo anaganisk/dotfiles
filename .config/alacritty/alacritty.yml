@@ -174,7 +174,7 @@ colors:
  primary:
   background:	'0x1E2541'
   foreground:	'0xEEFFFF'
- bright:
+ normal:
   black: '0x1E2541'
   red: '0xF0719B'
   green: '0x5AF7B0'
@@ -183,7 +183,7 @@ colors:
   magenta: '0xC792EA'
   cyan: '0x89DDFF'
   white: '0xEEFFFF'
- normal:
+ bright:
   black: '0x354274'
   red: '0xF02E6E'
   green: '0x2CE592'
