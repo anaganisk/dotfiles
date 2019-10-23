@@ -4,17 +4,20 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
-" Plug 'mhartington/oceanic-next'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
 let mapleader="\<SPACE>"
+
+set shell=/bin/zsh
+
 " theme
 if has('nvim') || has('termguicolors')
     set termguicolors
   endif
 syntax enable
 colorscheme nord
-" Lightline
-let g:lightline = { 'colorscheme': 'nord' }
+
 " theme end
 set showmatch
 set number
@@ -32,8 +35,9 @@ let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
-let g:airline_theme= 'onedark'
+let g:airline_theme= 'nord'
 map <Leader>o :NERDTreeToggle<CR>
+
 " Terminal Function
 let g:term_buf = 0
 let g:term_win = 0
