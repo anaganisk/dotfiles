@@ -53,6 +53,10 @@ bindsym $mod+Shift+q kill
 
 set_from_resource $rofiTheme rofi.theme "gnome"
 
+# Scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+Ctrl+minus scratchpad show
+
 # rofi app and window launchers
 bindsym $mod+space exec rofi -show drun -theme $rofiTheme
 bindsym $mod+Shift+space exec rofi -show run -theme $rofiTheme
