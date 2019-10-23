@@ -109,6 +109,7 @@ alias aptu="sudo apt update"
 alias pip="python -m pip"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
+alias cat='bat'
 
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.local/bin"
