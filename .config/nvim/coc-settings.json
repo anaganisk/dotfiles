@@ -1,4 +1,7 @@
 {
+  "coc.preferences.colorSupport": true,
+  "suggest.noselect": false,
   "tsserver.npm": "/home/saikiran/.nvm/versions/node/v12.13.0/bin/npm",
-  "npm.binPath": "/home/saikiran/.nvm/versions/node/v12.13.0/bin/npm"
+  "npm.binPath": "/home/saikiran/.nvm/versions/node/v12.13.0/bin/npm",
+  "python.jediEnabled": true 
 }
