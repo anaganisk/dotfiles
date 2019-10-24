@@ -10,7 +10,7 @@ call plug#end()
 let mapleader="\<SPACE>"
 
 set shell=/bin/zsh
-
+let g:coc_node_path = '/home/saikiran/.nvm/versions/node/v12.13.0/bin/node'
 " theme
 if has('nvim') || has('termguicolors')
     set termguicolors

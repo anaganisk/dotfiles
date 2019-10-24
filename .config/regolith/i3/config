@@ -241,6 +241,9 @@ new_float pixel 1
 gaps inner 0
 gaps outer 0
 
+#Rounded corners
+#border_radius 10
+
 # Only enable gaps on a workspace when there is at least one container
 smart_gaps on
 
