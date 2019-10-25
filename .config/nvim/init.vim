@@ -6,6 +6,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+"add fzf to runtimepath
+set rtp+=~/.fzf
+
 
 let mapleader="\<SPACE>"
 
