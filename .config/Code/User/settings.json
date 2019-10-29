@@ -39,5 +39,7 @@
     "prettier.singleQuote": true,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true
 }
