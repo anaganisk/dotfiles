@@ -110,6 +110,7 @@ alias pip="python -m pip"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias cat='bat'
+alias open='xdg-open &>/dev/null'
 
 export GO11MODULE="on" 
 export NVM_DIR="$HOME/.nvm"
