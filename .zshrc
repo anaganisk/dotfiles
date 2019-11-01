@@ -112,7 +112,7 @@ alias clip='xclip -selection clipboard'
 alias cat='bat'
 alias open='xdg-open &>/dev/null'
 
-export GOPATH="~/go"
+export GOPATH="$HOME/go"
 export GO11MODULE="on" 
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.local/bin"
