@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Material Theme Palenight",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
     "terminal.external.linuxExec": "alacritty",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -7,39 +7,26 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 24,
     "terminal.integrated.fontSize": 20,
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#80CBC4",
-        "list.activeSelectionForeground": "#80CBC4",
-        "list.inactiveSelectionForeground": "#80CBC4",
-        "list.highlightForeground": "#80CBC4",
-        "scrollbarSlider.activeBackground": "#80CBC450",
-        "editorSuggestWidget.highlightForeground": "#80CBC4",
-        "textLink.foreground": "#80CBC4",
-        "progressBar.background": "#80CBC4",
-        "pickerGroup.foreground": "#80CBC4",
-        "tab.activeBorder": "#80CBC4",
-        "notificationLink.foreground": "#80CBC4",
-        "editorWidget.resizeBorder": "#80CBC4",
-        "editorWidget.border": "#80CBC4",
-        "settings.modifiedItemIndicator": "#80CBC4",
-        "settings.headerForeground": "#80CBC4",
-        "panelTitle.activeBorder": "#80CBC4",
-        "breadcrumb.activeSelectionForeground": "#80CBC4",
-        "menu.selectionForeground": "#80CBC4",
-        "menubar.selectionForeground": "#80CBC4",
-        "editor.findMatchBorder": "#80CBC4",
-        "selection.background": "#80CBC440"
-    },
-    "materialTheme.accent": "Teal",
+    "workbench.colorCustomizations": {},
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
-    "prettier.singleQuote": true,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "go.formatTool": "goimports",
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/templates/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "*.html": "html"
+    },
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "Monokai Pro Icons",
 }
