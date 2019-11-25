@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "workbench.colorTheme": "Horizon Italic",
     "terminal.external.linuxExec": "alacritty",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -28,5 +28,5 @@
         "*.html": "html"
     },
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.iconTheme": "material-icon-theme",
 }
