@@ -11,10 +11,12 @@
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
