@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 call plug#end()
 "add fzf to runtimepath
 set rtp+=~/.fzf
@@ -29,6 +30,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set nojoinspaces
+set tw=80
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
