@@ -46,7 +46,7 @@ hide_edge_borders smart
 bindsym $mod+Return exec $terminal_path
 
 # start a web browser
-bindsym $mod+Shift+Return exec /usr/bin/firefox
+bindsym $mod+Shift+Return exec chrome
 bindsym $mod+e exec nautilus
 # kill focused window
 bindsym $mod+Shift+q kill
