@@ -106,11 +106,11 @@ alias aptrr="sudo apt-add-repository --remove -y"
 alias aptp="sudo apt purge --autoremove -y"
 alias apti="sudo apt install -y"
 alias aptu="sudo apt update"
-alias pip="python -m pip"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias cat='bat'
 alias open='xdg-open &>/dev/null'
+alias sshproxy="sshuttle --dns -r ubuntu@lightsail 0/0"
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
