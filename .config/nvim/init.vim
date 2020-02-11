@@ -14,7 +14,7 @@ set rtp+=~/.fzf
 let mapleader="\<SPACE>"
 
 set shell=/bin/zsh
-let g:coc_node_path = $HOME.'/.nvm/versions/node/v12.14.1/bin/node'
+let g:coc_node_path = $HOME.'/.nvm/versions/node/v12.15.0/bin/node'
 " theme
 if has('nvim') || has('termguicolors')
     set termguicolors
