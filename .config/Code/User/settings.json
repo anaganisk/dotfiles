@@ -3,9 +3,9 @@
     "terminal.external.linuxExec": "alacritty",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.fontFamily": "Dank Mono, Fira Code, Fira Mono for Powerline,  'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "Fira Code Retina, Dank Mono, Fira Code, Fira Mono for Powerline,  'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
-    "editor.fontSize": 24,
+    "editor.fontSize": 26,
     "terminal.integrated.fontSize": 20,
     "workbench.colorCustomizations": {},
     "window.menuBarVisibility": "toggle",
@@ -46,4 +46,5 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "platformio-ide.activateOnlyOnPlatformIOProject": true,
 }
