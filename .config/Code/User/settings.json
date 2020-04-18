@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Horizon Italic",
+    "workbench.colorTheme": "Cobalt2",
     "terminal.external.linuxExec": "alacritty",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -44,4 +44,6 @@
         "enabled": true,
         "args": []
     },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
