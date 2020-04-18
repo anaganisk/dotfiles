@@ -1,6 +1,6 @@
 #!/bin/bash
 git clone --bare git@github.com:anaganisk/dotfiles.git $HOME/.dotfiles
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $(ZSH_CUSTOM:-~/.oh-my-zsh/custom)/plugins/zsh-autosuggestions
 
 function dotfiles {
  /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
