@@ -1,6 +1,10 @@
 #!/bin/bash
+sudo apt install -y neovim zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --bare git@github.com:anaganisk/dotfiles.git $HOME/.dotfiles
-git clone https://github.com/zsh-users/zsh-autosuggestions $(ZSH_CUSTOM:-~/.oh-my-zsh/custom)/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 function dotfiles {
  /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
