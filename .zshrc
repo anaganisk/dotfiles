@@ -107,7 +107,6 @@ alias apti="sudo apt install -y"
 alias aptu="sudo apt update"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
-alias cat='bat'
 alias open='xdg-open &>/dev/null'
 alias sshproxy="sshuttle --dns -r ubuntu@lightsail 0/0"
 
