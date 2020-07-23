@@ -108,7 +108,8 @@ alias aptu="sudo apt update"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias open='xdg-open &>/dev/null'
-alias sshproxy="sshuttle --dns -r ubuntu@lightsail 0/0"
+alias proxykube="ssh -L 8443:0.0.0.0:8443 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 kube"
+alias proxysail="ssh -L 9000:0.0.0.0:9000 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 lightsail"
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
@@ -116,6 +117,10 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/Android/cmd-tools/bin"
+export PATH="$PATH:$HOME/Android/platform-tools"
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export ANDROID_HOME="$HOME/Android"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
