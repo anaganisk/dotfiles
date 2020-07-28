@@ -109,7 +109,6 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias open='xdg-open &>/dev/null'
 alias proxykube="ssh -L 8443:0.0.0.0:8443 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 kube"
-alias proxysail="ssh -L 9000:0.0.0.0:9000 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 lightsail"
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
