@@ -117,11 +117,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/Android/tools/bin"
-export PATH="$PATH:$HOME/Android/platform-tools"
 export PATH="$PATH:$HOME/flutter/bin"
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 export ANDROID_HOME="$HOME/Android"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/tools/bin"
+export ADB_SERVER_SOCKET=tcp:192.168.1.3:5037
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
