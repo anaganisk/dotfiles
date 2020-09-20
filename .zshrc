@@ -109,7 +109,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias open='xdg-open &>/dev/null'
 
-alias proxykube="ssh -L 8443:0.0.0.0:8443 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 -L 5432:ls-00a6300602059a3fac071ed17ac13967be6bf415.c7plo88vea4t.ap-south-1.rds.amazonaws.com:5432 kube"
+alias proxykube="ssh -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 120' -L 8443:0.0.0.0:8443 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 -L 5432:ls-00a6300602059a3fac071ed17ac13967be6bf415.c7plo88vea4t.ap-south-1.rds.amazonaws.com:5432 kube"
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
@@ -122,7 +122,7 @@ export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 export ANDROID_HOME="$HOME/Android"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/tools/bin"
-export ADB_SERVER_SOCKET=tcp:192.168.1.3:5037
+export ADB_SERVER_SOCKET=tcp:192.168.0.7:5037
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
