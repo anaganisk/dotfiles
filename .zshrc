@@ -69,7 +69,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions git)
+plugins=(docker zsh-autosuggestions git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,7 +109,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias open='xdg-open &>/dev/null'
 
-alias proxykube="ssh -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 120' -L 8443:0.0.0.0:8443 -L 3306:ls-b91c724a1f56b9721e975b98a669cfbe123dc71e.c7plo88vea4t.ap-south-1.rds.amazonaws.com:3306 -L 5432:ls-00a6300602059a3fac071ed17ac13967be6bf415.c7plo88vea4t.ap-south-1.rds.amazonaws.com:5432 kube"
+alias proxycap="ssh -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 120' -L 5432:ls-00a6300602059a3fac071ed17ac13967be6bf415.c7plo88vea4t.ap-south-1.rds.amazonaws.com:5432 cap1"
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
@@ -117,12 +117,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/balena-cli"
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 export ANDROID_HOME="$HOME/Android"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/tools/bin"
-export ADB_SERVER_SOCKET=tcp:192.168.0.7:5037
+export ADB_SERVER_SOCKET=tcp:192.168.0.11:5037
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
