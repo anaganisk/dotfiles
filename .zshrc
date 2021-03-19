@@ -90,6 +90,10 @@ export LANG=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+function pip-install-save { 
+  pip3 install $1 && pip3 freeze | grep $1 >> requirements.txt
+}
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -108,8 +112,9 @@ alias aptu="sudo apt update"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias clip='xclip -selection clipboard'
 alias open='xdg-open &>/dev/null'
-
+alias emacs='emacs -nw'
 alias proxycap="ssh -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 120' -L 5432:ls-00a6300602059a3fac071ed17ac13967be6bf415.c7plo88vea4t.ap-south-1.rds.amazonaws.com:5432 cap1"
+alias pip=pip-install-save
 
 export GOPATH="$HOME/go"
 export GO11MODULE="on" 
