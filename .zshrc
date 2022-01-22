@@ -129,3 +129,7 @@ export PATH="$PATH:$GOPATH/bin"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='rg --files'
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+[ -s "/home/saikiran/.jabba/jabba.sh" ] && source "/home/saikiran/.jabba/jabba.sh"
